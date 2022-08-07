@@ -1,141 +1,59 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icecream</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Icecream</title>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet">
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+  </head>
 
-  <!-- Normalize -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+  <body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
 
-  <!-- Castom styles -->
-  <link rel="stylesheet" href="./css/style.css">
+    <main>
+      <!-- Hero -->
+      <include src="./partials/hero.html"></include>
 
-</head>
+      <!-- Products -->
+      <include src="./partials/products.html"></include>
 
-<body>
-  <!-- Header section -->
-  <header class="header">
-    <div class="container heaer_container">
-      <a class="header-logo" href="./index.html" aria-label="logo icecream">
-        <svg class="header-icon" width="199" height="50">
-          <use class="header-icon_svg" href="/images/svg/symbol-defs.svg#icon-logo"></use>
-        </svg>
-      </a>
+      <!-- About -->
+      <include src="./partials/about.html"></include>
 
-      <button class="mobile-menu-btn" type="button">
-        <svg class="mobile-menu-icon" width="20" height="12">
-          <use class="mobile-menu-burger" href="../images/svg/symbol-defs.svg#burger-open"></use>
-          <use class="mobile-menu-close" href="../images/svg/symbol-defs.svg#burger-close"></use>
-        </svg>
-      </button>
+      <!-- Advantages -->
+      <include src="./partials/advantages.html"></include>
 
+      <!-- Gallery -->
+      <include src="./partials/gallery.html"></include>
 
+      <!-- Customer Reviews -->
+      <include src="./partials/customer-reviews.html"></include>
 
-      <nav class="header-nav">
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link" href="./index.html">Home</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">About us</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">How It's made?</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">Our products</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="menu-btn" type="submit">
-        <span class="menu-btn_text">Buy now</span>
-        <svg class="munu-btn_icon" width="5.26" height="8">
-          <use href="../images/svg/symbol-defs.svg#icon-button"></use>
-        </svg>
-      </button>
-    </div>
-  </header>
+      <!-- Contacts -->
+      <include src="./partials/contacts.html"></include>
+    </main>
 
-  <!-- Mobile menu -->
-  <!-- <div class="mobile-menu" data-menu>
-    <button class="menu-btn" type="submit">
-      <span class="menu-btn_text">Buy now</span>
-      <svg class="munu-btn_icon" width="5.26" height="8">
-        <use href="../images/svg/symbol-defs.svg#icon-button"></use>
-      </svg>
-    </button>
-    <ul class="mobile-menu_nav list">
-      <li class="mobile-menu_item">
-        <a class="link" href="#">Home</a>
-      </li>
-      <li class="mobile-menu_item">
-        <a class="link" href="#">About us</a>
-      </li>
-      <li class="mobile-menu_item">
-        <a class="link" href="#">How it's made?</a>
-      </li>
-      <li class="mobile-menu_item">
-        <a class="link" href="#">Our products</a>
-      </li>
-      <li class="mobile-menu_item">
-        <a class="link" href="#">Contact</a>
-      </li>
-    </ul>
-  </div> -->
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
 
-
-
-
-
-  <main>
-    <!-- Hero -->
-
-
-    <!-- Products -->
-
-
-    <!-- About -->
-
-
-    <!-- Advantages -->
-
-
-    <!-- Gallery -->
-
-
-    <!-- Customer Reviews -->
-
-
-    <!-- Contacts -->
-
-
-  </main>
-
-  <!-- Footer -->
-
-  <footer class="footer">
-  </footer>
-
-
-
-
-
-
-
-  <script src="./js/menu.js"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
