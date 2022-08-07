@@ -25,37 +25,79 @@
 <body>
   <!-- Header section -->
   <header class="header">
-    <div class="container">
-      <a class="header-logo" href="./index.html">
+    <div class="container heaer_container">
+      <a class="header-logo" href="./index.html" aria-label="logo icecream">
         <svg class="header-icon" width="199" height="50">
           <use class="header-icon_svg" href="/images/svg/symbol-defs.svg#icon-logo"></use>
         </svg>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link" href="./index.html">Home</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="#">About us</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="#">How It's made?</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="#">Our products</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="menu-btn" type="button">
-        </button>
       </a>
+
+      <button class="mobile-menu-btn" type="button">
+        <svg class="mobile-menu-icon" width="20" height="12">
+          <use class="mobile-menu-burger" href="../images/svg/symbol-defs.svg#burger-open"></use>
+          <use class="mobile-menu-close" href="../images/svg/symbol-defs.svg#burger-close"></use>
+        </svg>
+      </button>
+
+
+
+      <nav class="header-nav">
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-link link" href="./index.html">Home</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="#">About us</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="#">How It's made?</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="#">Our products</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-btn" type="submit">
+        <span class="menu-btn_text">Buy now</span>
+        <svg class="munu-btn_icon" width="5.26" height="8">
+          <use href="../images/svg/symbol-defs.svg#icon-button"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
   <!-- Mobile menu -->
+  <!-- <div class="mobile-menu" data-menu>
+    <button class="menu-btn" type="submit">
+      <span class="menu-btn_text">Buy now</span>
+      <svg class="munu-btn_icon" width="5.26" height="8">
+        <use href="../images/svg/symbol-defs.svg#icon-button"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu_nav list">
+      <li class="mobile-menu_item">
+        <a class="link" href="#">Home</a>
+      </li>
+      <li class="mobile-menu_item">
+        <a class="link" href="#">About us</a>
+      </li>
+      <li class="mobile-menu_item">
+        <a class="link" href="#">How it's made?</a>
+      </li>
+      <li class="mobile-menu_item">
+        <a class="link" href="#">Our products</a>
+      </li>
+      <li class="mobile-menu_item">
+        <a class="link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div> -->
+
+
+
 
 
   <main>
@@ -90,8 +132,10 @@
 
 
 
-  <!-- ❗️❗️❗️ Add partials like so for every page -->
-  <include src="./partials/example.html"></include>
+
+
+
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
