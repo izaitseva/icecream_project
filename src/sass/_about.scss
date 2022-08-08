@@ -3,11 +3,32 @@
     background-color: #FFF5F6;
     padding: 60px 20px 40px 20px;
     position: relative;
+    display: block;
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.about__title-conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    
+    @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    }
 }
 
 .about__title-span {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -15,6 +36,20 @@
     line-height: 1.16;
     color: #FFA5BA;
     margin-bottom: 15px;
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.15;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFA5BA;
+        width: 285px;
+    }
 }
 
 .about__title {
@@ -28,13 +63,34 @@
     text-transform: uppercase;
     color: #D41443;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    
+    @media screen and (min-width: 768px) {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #D41443;
+        width: 100%;
+    }
 }
 
 .about__conteiner-text {
     display: flex;
     flex-wrap: wrap;
+    margin-right: auto;
     
+    @media screen and (min-width: 768px) {
+        width: 334px;
+        margin-right: 0;
+        margin-left: 32px;
+    }
 }
 
 
@@ -52,6 +108,8 @@
 
 .about__image {
     margin-bottom: 40px;
+    width: 280px;
+    
 }
 
 .about__text-span {
@@ -64,6 +122,15 @@
     margin-bottom: 40px;
     padding-right: 60px;
     z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.78;
+        color: #000000;
+    }
 }
 
 // .about__text-span::after {
@@ -81,6 +148,11 @@
     position: absolute;
     top: 64%;
     left: 0;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: none;
+        
+    }
     
 }
 
