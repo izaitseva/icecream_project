@@ -1,0 +1,17 @@
+.footer {
+    background-color: var(--sec-bgc);
+
+
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+
+    &__icon:hover,
+    &__icon:focus {
+        fill: var(--main-color);
+    }
+
+}
+
