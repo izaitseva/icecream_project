@@ -1,4 +1,6 @@
-@import '~node_modules/modern-normalize/modern-normalize.css'; /* Reset */
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+/* Reset */
 html {
   width: 100%;
   max-width: 100%;
@@ -13,7 +15,7 @@ html {
 
 .link {
   -webkit-text-decoration: 0;
-          text-decoration: 0;
+  text-decoration: 0;
 }
 
 img {
@@ -31,7 +33,7 @@ img {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -121,6 +123,7 @@ img {
   display: block;
   margin: 0 auto;
 }
+
 .reviews-slider__markers:before {
   content: "";
   background: #C7133E;
@@ -130,6 +133,7 @@ img {
   position: absolute;
   left: 10px;
 }
+
 .reviews-slider__markers:after {
   content: "";
   background: #C7133E;
@@ -145,20 +149,24 @@ img {
   padding: 0;
   margin: 0;
 }
+
 .slick-dots li {
   list-style-type: none;
   display: inline-block;
   margin: 0 18px 0 0;
 }
+
 .slick-dots li:last-child {
   margin: 0;
 }
+
 .slick-dots li.slick-active button {
   background: transparent url(../images/svg/customer-reviews/dots.svg) no-repeat;
   width: 12px;
   height: 12px;
   border-radius: 0;
 }
+
 .slick-dots li button {
   background-color: #D9D9D9;
   width: 12px;
@@ -177,6 +185,7 @@ img {
   align-items: center;
   margin-left: auto;
 }
+
 @media screen and (min-width: 1200px) {
   .mobile-menu-btn {
     display: none;
@@ -185,4 +194,6 @@ img {
 
 .mobile-menu-close {
   opacity: 0;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
