@@ -17,6 +17,11 @@
   z-index: 10;
   transition: var(--anim-slow);
 
+  @media screen and (min-width: 768px) {
+    padding-top: 58px;
+    padding-bottom: 704px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -27,10 +32,10 @@
 }
 
 .mobile-menu_nav {
-  margin-top: 32px;
+  margin-top: 19px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 33px;
+    margin-top: 20px;
   }
 }
 
@@ -41,8 +46,11 @@
   line-height: 1.28;
   color: white;
 
-  padding-top: 13px;
-  padding-bottom: 13px;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
   border-top: 1px solid #e18298;
 
   &:last-child {
