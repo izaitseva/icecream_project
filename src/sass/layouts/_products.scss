@@ -65,16 +65,12 @@
         position: relative;
 
         &:before {
-            content: "";
+            background-image: url(../images/products/products-1_sm.png);
             position: absolute;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: rgb(255, 255, 255);
-            box-shadow: -9px 0 0 white, 9px 0 0 white;
-    
-            top: 215px;
-            right: 100px;
+            width: 100%;
+            height: 280px;
+            top: 0;
+            right: 0;
         }
 
         &--first {
@@ -88,14 +84,6 @@
         &--third {
             background-color: #C2E297;
         }
-
-        // &:before {
-        //     background-image: url("../images/products/products-1_sm.png");
-        //     position: absolute;
-        //     border-radius: 50%;
-
-        //     top: 215px;
-        // }
     }
 
     &__header {
