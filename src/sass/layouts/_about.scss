@@ -238,13 +238,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
     color: #D41443;
+    z-index: 5;
+     &:hover {
+        background-color: #ECEBEB;
+     }
 }
 
 .about__button-image {
