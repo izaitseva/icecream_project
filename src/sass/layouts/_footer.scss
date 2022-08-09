@@ -110,15 +110,38 @@
     gap: 30px;
 
     &__icon {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+    
+            @media screen and (min-width: 768px) {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 32px;
         height: 32px;
+        // background-color: var(--white-text-color);
+        color: var(--sec-color);
+        border-radius: 50%;
 
         @media screen and (min-width: 768px) {
                 width: 34px;
                 height: 34px;
             }
+
+        &:hover, &:focus {
+            background-color: var(--white-text-color);
+            color: var(--main-color);
+        }
     }
 
+    
 }
 
 .link__tel {
@@ -141,7 +164,7 @@
 }
 
 .copyright {
-    position: static;
+    // position: static;
     height: 60px;
     max-width: 1199px;
     border-top: 1px solid #E1E1E1;
@@ -157,11 +180,10 @@
         }
 
     &__title {
-        position: relative;
-        top: calc(50% - 16px);
-        left: calc(50% - 70px);
         width: 140px;
-        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 16px;
         color: #907E82;
         font-weight: 700;
         font-size: 14px;
@@ -170,8 +192,7 @@
         
         @media screen and (min-width: 768px) {
                 width: 278px;
-                top: calc(50% - 13px);
-                left: calc(50% - 139px);
+                margin-top: 7px;
                 line-height: 1.85;
             }
     }
