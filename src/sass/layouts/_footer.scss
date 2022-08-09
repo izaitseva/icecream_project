@@ -176,14 +176,16 @@
 
     &__title {
         display: block;
-        width: 140px;
+        width: 151px;
         margin-right: auto;
         margin-left: auto;
         margin-top: 16px;
         color: #907E82;
+        font-family: 'DM Sans', sans-serif;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.5;
+        letter-spacing: 0.02em;
         text-align: center;
         
         @media screen and (min-width: 768px) {
