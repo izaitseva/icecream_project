@@ -27,7 +27,7 @@
 .advantages__item:nth-child(1) {
   background-image: url(../images/advantages/advantages1.png);
   background-repeat: no-repeat;
-  background-size: 50px 50px;
+  background-size: 33px 50px;
 }
 .advantages__item:nth-child(2) {
   background-image: url(../images/advantages/advantages2.png);
@@ -57,7 +57,7 @@
   margin-bottom: 24px;
   font-family: 'Titan One';
   font-size: 36px;
-  line-height: 1.13;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--main-color);
   @media screen and (max-width: 767px) {
