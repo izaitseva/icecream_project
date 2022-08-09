@@ -246,7 +246,12 @@
     line-height: 1.28;
     color: #D41443;
     z-index: 5;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
      &:hover {
+        background-color: #ECEBEB;
+     }
+     &:focus{
         background-color: #ECEBEB;
      }
 }
