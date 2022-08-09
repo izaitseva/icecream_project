@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Icecream</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -16,9 +16,56 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <script type="module" src="./index.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
   </head>
+
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/about.html"></include>
+
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
+
+    <main>
+      <!-- Hero -->
+      <include src="./partials/hero.html"></include>
+
+      <!-- Products -->
+      <include src="./partials/products.html"></include>
+
+      <!-- About -->
+      <include src="./partials/about.html"></include>
+
+      <!-- Advantages -->
+      <include src="./partials/advantages.html"></include>
+
+      <!-- Gallery -->
+      <include src="./partials/gallery.html"></include>
+
+      <!-- Customer Reviews -->
+      <include src="./partials/customer-reviews.html"></include>
+
+      <!-- Contacts -->
+      <include src="./partials/contacts.html"></include>
+    </main>
+
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
+
+    <!-- Scripts -->
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>
