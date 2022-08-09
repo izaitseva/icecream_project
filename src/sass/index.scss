@@ -1,9 +1,15 @@
-@import './base/common';
-@import './base/reset';
-@import './utils/vars';
-@import './utils/visually-hidden';
+// utils 
 
-@import './button';
+@import './utils/index';
 
-@import './header';
-@import './mobile-menu';
+// base
+
+@import './base/index';
+
+// components
+
+@import './components/index';
+
+// layouts
+
+@import './layouts/index';
