@@ -138,6 +138,10 @@ img {
   color: #D41443;
 }
 
+.header-link--current {
+  color: #D41443;
+}
+
 .header-item:last-child {
   margin-right: 0;
 }
@@ -146,9 +150,10 @@ img {
   margin-left: auto;
   margin-top: 40px;
   text-decoration: none;
+  border: none;
 }
 .menu-btn:hover, .menu-btn:focus {
-  background-color: #ECEBEB;
+  background-color: var(--button-hover-bgc);
 }
 @media screen and (max-width: 767px) {
   .menu-btn {
@@ -172,27 +177,60 @@ img {
 }
 
 .hero__container {
+  position: relative;
   background-color: #FFB8CA;
+  height: 580px;
 }
 
 .hero__title {
   padding-top: 60px;
   font-family: "Titan One";
   font-weight: 400;
-  font-size: 38px;
-  line-height: 1.16;
+  font-size: 26px;
+  line-height: 30px;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--white-text-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
 }
 
 .hero__title--secondary {
   font-weight: 400;
-  font-size: 58px;
-  line-height: 90.5%;
+  font-size: 48px;
+  line-height: 96.5%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--main-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__title--secondary {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title--secondary {
+    font-size: 58px;
+    line-height: 90.5%;
+  }
+}
+
+.hero__list {
+  display: flex;
+  margin-bottom: 40px;
 }
 
 .hero__item {
@@ -208,31 +246,178 @@ img {
   height: 40px;
   border-radius: 20%;
   color: var(--white-text-color);
-  background-color: #D41443;
+  background-color: var(--main-color);
   cursor: pointer;
 }
 
 .hero__item:hover,
 .hero__item:focus {
-  color: #D41443;
-  background-color: #FFFFFF;
+  color: var(--main-color);
+  background-color: var(--white-text-color);
 }
 
 .hero__item--secondary {
-  color: #D41443;
-  background-color: #FFFFFF;
+  color: var(--main-color);
+  background-color: var(--white-text-color);
   width: 138px;
   height: 40px;
 }
 
 .hero__item--secondary:hover,
 .hero__item--secondary:focus {
-  color: #D41443;
-  background-color: #ECEBEB;
+  color: var(--main-color);
+  background-color: var(--button-hover-bgc);
 }
 
 .hero__item:not(:last-child) {
   margin-right: 12px;
+}
+
+.hero-images {
+  display: flex;
+}
+
+.uppertitle-block {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .uppertitle-block {
+    display: none;
+  }
+}
+
+.hero-uppertitle {
+  margin-top: 68px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 78px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--white-text-color);
+}
+
+.hero-btn {
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits {
+    display: none;
+  }
+}
+
+.hero-benefits__amount {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.hero-benefits__item {
+  margin-top: 15px;
+}
+
+.hero-benefits__descr {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--white-text-color);
+}
+
+.hero-images__second {
+  position: absolute;
+  bottom: 0;
+  right: 344px;
+}
+@media screen and (min-width: 768px) {
+  .hero-images__second {
+    right: 303px;
+  }
+}
+
+.hero-images__third {
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+}
+
+.benefits {
+  position: absolute;
+  right: 32px;
+  top: 64px;
+}
+
+.hero-images__group::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 36px;
+  bottom: 75px;
+  width: 346px;
+  height: 344px;
+  background-color: #FFA5BA;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .hero-images__group::after {
+    right: 189px;
+    bottom: 76px;
+    right: 303px;
+    width: 335px;
+    height: 333px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-images__group::after {
+    left: 517px;
+    bottom: 76px;
+    width: 534px;
+    height: 534px;
+  }
+}
+
+.hero-benefits__item--first {
+  position: relative;
+  width: 72px;
+  height: 77px;
+}
+
+.hero-benefits__item--first::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.hero-benefits__item--second {
+  width: 92px;
+  height: 76px;
+}
+
+.hero-benefits__item--second::before {
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: -5px;
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.hero-benefits__amount {
+  text-align: center;
 }
 
 :root {

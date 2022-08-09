@@ -11,15 +11,10 @@
   display: flex;
   align-items: center;
   background-color: #FFB8CA;
+ 
 }
 
-// .header_container {
-  
-//   position: fixed;
-//   top: 0;
-//   z-index: 100;
- 
-// }
+
 
 
 .header-icon_svg {
@@ -58,6 +53,10 @@
 
 }
 
+.header-link--current {
+  color: #D41443;
+
+}
 .header-item:last-child {
   margin-right: 0;
 }
@@ -66,10 +65,12 @@
   margin-left: auto;
   margin-top: 40px;
   text-decoration: none;
+  border: none;
+  
 
   &:hover,
   &:focus {
-    background-color: #ECEBEB;
+    background-color:var(--button-hover-bgc);
   }
   
  
