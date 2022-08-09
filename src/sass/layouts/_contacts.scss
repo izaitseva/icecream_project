@@ -1,0 +1,104 @@
+// .container {
+//   width: 320px;
+// }
+
+.section__title {
+  visibility: hidden;
+}
+
+.contacts__item {
+  background-color: #FFFFFF;
+  padding: 40px 32px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px 78px 40px 40px;
+  }
+}
+
+.contacts__title {
+  display: flex;
+  justify-content: center;
+  background: #F0D1A5;
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  align-items: center;
+  letter-spacing: 0.04em;
+  width: 80px;
+  height: 16px;
+  text-align: center;
+  margin: 0 0 20px;
+
+}
+
+.contacts__address {
+  border-bottom: 1px solid #E1E1E1;
+
+}
+
+.contacts__address-city {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin: 0 0 8px;
+}
+
+.contacts__address-street {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907E82;
+  margin: 0 0 24px;
+}
+
+
+
+.contacts__open {
+  border-bottom: 1px solid #E1E1E1;
+  padding: 24px 0;
+
+}
+
+.contacts__open-days {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000000;
+}
+
+.contacts__open-hours {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #FFA5BA;
+}
+
+.contacts__info {
+  display: block;
+  padding-top: 32px;
+
+}
+
+.contacts__info-link {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  color: #907E82;
+}
+
+.contacts__info-link:hover {
+  color: #D41443;
+}
