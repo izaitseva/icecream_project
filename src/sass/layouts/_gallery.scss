@@ -1,0 +1,139 @@
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+.gallery__conteiner {
+  background: rgb(229,229,229);
+  background: linear-gradient(0deg, rgba(229,229,229,1) 115px, rgba(255,245,246,1) 115px);
+  
+}
+@media screen and (min-width: 768px){ 
+  .gallery__conteiner{
+      background: rgb(229,229,229);
+      background: linear-gradient(0deg, rgba(229,229,229,1) 83%, rgba(255,245,246,1) 83%);
+      
+      }
+}
+@media screen and (min-width: 1200px){ 
+  .gallery__conteiner{
+      background: rgb(229,229,229);
+      background: linear-gradient(0deg, rgba(229,229,229,1) 360px, rgba(255,245,246,1) 360px);
+      }
+}
+img {
+    max-width: 100%;
+    display: block;
+    border-radius:  8px;
+  }
+@media screen and (min-width: 768px){ 
+  img{
+      border-radius:  20px;
+      }
+  }
+
+.gallery{
+  height: 136px; 
+}
+@media screen and (min-width: 768px){ 
+  .gallery{
+      height: 327px;
+      }
+}
+@media screen and (min-width: 1200px){ 
+  .gallery{ 
+      height: 430px;
+      }
+}
+
+.gallery__list{
+  display: flex;
+  justify-content: center;
+}
+
+
+.gallery__colomn,
+.gallery__colomn-1,
+.gallery__colomn-2,
+.gallery__colomn-3{
+  padding-right: 2px;
+}
+@media screen and (min-width: 768px){
+  .gallery__colomn,
+  .gallery__colomn-1,
+  .gallery__colomn-2,
+  .gallery__colomn-3{
+      padding-right: 6px;
+  }
+  
+}
+@media screen and (min-width: 1200px){
+  .gallery__colomn,
+  .gallery__colomn-1,
+  .gallery__colomn-2,
+  .gallery__colomn-3{
+      padding-right: 8px;
+  }
+}
+.gallery-resize{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-resize{
+      height: 290px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-resize{
+      height: 350px;
+  }
+}
+.gallery__resize--4{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 90px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__resize--4{
+      height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__resize--4{
+      height: 270px;
+  }
+}
+
+.gallery__img {
+    margin-bottom: 2px;
+}
+
+
+.gallery__colomn-1{
+  display: flex;
+  align-items: center;
+}
+
+.gallery__colomn-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.gallery__colomn-3{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
