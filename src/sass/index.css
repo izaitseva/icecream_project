@@ -244,7 +244,7 @@ img {
   justify-content: center;
   width: 107px;
   height: 40px;
-  border-radius: 20%;
+  border-radius: 22%;
   color: var(--white-text-color);
   background-color: var(--main-color);
   cursor: pointer;

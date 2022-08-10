@@ -22,12 +22,15 @@
 }
 
 .header-logo {
-  margin-top: 37px;
+  padding-top: 37px;
+  
 }
 
 .header-nav {
-  margin-top: 40px;
+  padding-top: 40px;
   margin-left: 128px;
+
+  z-index: 1;
 
   
 
