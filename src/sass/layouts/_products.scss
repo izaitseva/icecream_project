@@ -1,8 +1,11 @@
+// .products-container {
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
 .products-section {
     background-color: #ffff;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 
     padding-top: 60px;
     padding-bottom: 60px;
@@ -45,6 +48,7 @@
 
     @media screen and (min-width: 1200px) {
         gap: 32px;
+        flex-wrap: nowrap;
     }
 }
 
@@ -56,8 +60,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
 
     @media screen and (min-width: 768px) {
         max-width: 224px;
