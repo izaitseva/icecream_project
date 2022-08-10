@@ -21,7 +21,7 @@
 
 
   @media screen and (min-width: 768px) {
-    padding: 0 74px;
+    padding: 0 54px;
 
   }
 
@@ -44,7 +44,7 @@
 
 .reviews-slider__text {
   background: #FAFAFA;
-  padding: 43px 50px 26px;
+  padding: 43px 50px 17px;
 
 
 
@@ -53,7 +53,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 47px 70px 39px;
+    padding: 47px 73px 31px;
   }
 }
 
@@ -61,9 +61,9 @@
   font-weight: 500;
   font-size: 12px;
   color: #000000;
-  line-height: 255%;
+  line-height: 2.58;
   background: repeating-linear-gradient(#FAFAFA, #FAFAFA 30px, #E1E1E1 29px 31px);
-  padding: 0 19px 3px;
+  padding: 0 12px 9px;
   margin: 0;
   position: relative;
 
@@ -79,7 +79,7 @@
     background-size: contain;
   }
 
-  span {
+  .reviews-slider__comment {
     position: relative;
   }
 
@@ -88,7 +88,7 @@
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 216%;
+    line-height: 2.14;
     text-align: center;
     letter-spacing: 0.04em;
   }
@@ -96,7 +96,7 @@
   @media screen and (min-width: 1200px) {
 
     font-size: 16px;
-    line-height: 186%;
+    line-height: 1.87;
   }
 
 
@@ -108,11 +108,12 @@
   font-weight: 500;
   font-size: 14px;
   margin: 16px 0;
+  line-height: 1.85;
 
   @media screen and (min-width: 768px) {
     margin: 16px 0 32px;
     font-size: 16px;
-    line-height: 186%;
+    line-height: 1.87;
   }
 
   @media screen and (min-width: 768px) {
