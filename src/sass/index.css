@@ -237,12 +237,16 @@ img {
   margin: 0 0 20px;
 }
 
+<<<<<<< Updated upstream
 .contacts__box {
   border-bottom: 1px solid #E1E1E1;
   padding: 24px 0;
 }
 
 .contacts__city {
+=======
+.contacts__box-city {
+>>>>>>> Stashed changes
   display: block;
   font-weight: 500;
   font-size: 12px;
@@ -252,16 +256,28 @@ img {
   margin: 0 0 8px;
 }
 
+<<<<<<< Updated upstream
 .contacts__street {
+=======
+.contacts__box-street {
+>>>>>>> Stashed changes
   display: block;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   color: #907E82;
-  margin: 0 0 24px;
 }
 
+<<<<<<< Updated upstream
 .contacts__days {
+=======
+.contacts__box {
+  border-bottom: 1px solid #E1E1E1;
+  padding: 24px 0;
+}
+
+.contacts__box-days {
+>>>>>>> Stashed changes
   display: block;
   font-weight: 500;
   font-size: 12px;
@@ -269,7 +285,11 @@ img {
   color: #000000;
 }
 
+<<<<<<< Updated upstream
 .contacts__hours {
+=======
+.contacts__box-hours {
+>>>>>>> Stashed changes
   display: block;
   font-weight: 500;
   font-size: 12px;
