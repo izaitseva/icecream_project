@@ -1,6 +1,6 @@
 .about__conteiner {
     width: 100%;
-    background-color: #FFF5F6;
+    background-color: var(--sec-bgc);
     padding: 60px 20px 40px 20px;
     position: relative;
     display: block;
@@ -10,6 +10,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 60px 34px 60px 32px;
+        justify-content: center;
     }
 
     @media screen and (min-width: 1200px) {
@@ -38,7 +39,7 @@
 .about__title-span {
     display: block;
     text-align: center;
-    font-family: 'Titan One';
+    font-family: 'Titan One', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -48,7 +49,6 @@
     
 
     @media screen and (min-width: 768px) {
-        display: flex;
         font-size: 26px;
         line-height: 1.15;
         text-transform: uppercase;
@@ -57,20 +57,14 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 30px;
-        line-height: 34px;
+        line-height: 1.13;
         letter-spacing: 0.04em;
     }
 }
 
 .about__title {
-    font-family: 'Titan One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 39px;
     text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: #D41443;
     margin-top: 0;
     margin-left: auto;
@@ -78,23 +72,18 @@
     margin-bottom: 0;
     
     @media screen and (min-width: 768px) {
-        font-size: 48px;
+       
         line-height: 1.14;
         width: 100%;
     }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 58px;
-        line-height: 66px;
-        letter-spacing: 0.06em;
-    }
 }
 
 .about__conteiner-text {
     display: flex;
     flex-wrap: wrap;
     margin-right: auto;
-    width: 100%;
+    max-width: 220px;
     
     @media screen and (min-width: 768px) {
         width: 334px;
@@ -106,7 +95,7 @@
     @media screen and (min-width: 1200px) {
         width: 463px;
         margin-left: 99px;
-        margin-top: 150px;
+        margin-top: 90px;
     }
 }
 
@@ -126,10 +115,13 @@
 .about__image {
     margin-bottom: 40px;
     
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .about__text-span {
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', cursive;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -205,13 +197,12 @@
 }
 
 .about__text {
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', cursive;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.58;
     color: #907E82;
-    margin-top: 0;
     margin-bottom: 20px;
     z-index: 1;
 
@@ -231,28 +222,20 @@
 .about__button {
     width: 176px;
     height: 44px;
-    background-color: #FFFFFF;
-    border-radius: 22px;
+    background-color: var(--white-text-color);
     margin-right: auto;
     border-color: #11ffee00;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
     color: #D41443;
     z-index: 5;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
      &:hover {
-        background-color: #ECEBEB;
+        background-color: var(--button-hover-bgc);
      }
      &:focus{
-        background-color: #ECEBEB;
+        background-color: var(--button-hover-bgc);
      }
 }
 
