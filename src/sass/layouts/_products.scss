@@ -154,7 +154,7 @@
         display: inline-block;
         width: 280px;
         height: 280px;
-        background-image: url(../images/products/products-1_sm.png);
+        background-size: 100%;
         background-repeat: no-repeat;
         top: -29%;
         left: 50%;
@@ -163,10 +163,28 @@
 
         background-image: url(../images/products/products-1_sm.png);
 
+        // Retina display mobile
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-1_sm@2x.png);
+        }
+
         @media screen and (min-width: 768px) {
             width: 224px;
             height: 224px;
             background-image: url(../images/products/products-1_md.png);
+        }
+
+        // Retina display tablet
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-1_md@2x.png);
         }
 
         @media screen and (min-width: 1200px) {
@@ -174,6 +192,15 @@
             width: 368px;
             height: 394px;
             background-image: url(../images/products/products-1_lg.png);
+        }
+
+        // Retina display desk
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-1_md@2x.png);
         }
     }
 }
@@ -185,19 +212,37 @@
         content: "";
         width: 280px;
         height: 280px;
-        background-image: url(../images/products/products-2_sm.png);
         background-repeat: no-repeat;
         top: -29%;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
+        background-size: 100%;
 
         background-image: url(../images/products/products-2_sm.png);
+
+        // Retina display mobile
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-2_sm@2x.png);
+        }
 
         @media screen and (min-width: 768px) {
             width: 224px;
             height: 224px;
             background-image: url(../images/products/products-2_md.png);
+
+            // Retina display tablet
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-2_md@2x.png);
+        }
         }
 
         @media screen and (min-width: 1200px) {
@@ -206,6 +251,15 @@
             height: 394px;
             background-image: url(../images/products/products-2_lg.png);
         }
+
+         // Retina display desk
+
+         @media (min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             background-image: url(../images/products/products-2_md@2x.png);
+         }
     }
 }
 
@@ -216,7 +270,7 @@
         content: "";
         width: 280px;
         height: 280px;
-        background-image: url(../images/products/products-3_sm.png);
+        background-size: 100%;
         background-repeat: no-repeat;
         top: -29%;
         left: 50%;
@@ -225,10 +279,28 @@
 
         background-image: url(../images/products/products-3_sm.png);
 
+        // Retina display mobile
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-3_sm@2x.png);
+        }
+
         @media screen and (min-width: 768px) {
             width: 224px;
             height: 224px;
             background-image: url(../images/products/products-3_md.png);
+        }
+
+        // Retina display tablet
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-3_md@2x.png);
         }
 
         @media screen and (min-width: 1200px) {
@@ -236,6 +308,15 @@
             width: 368px;
             height: 394px;
             background-image: url(../images/products/products-3_lg.png);
+        }
+
+        // Retina display desk
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/products-3_md@2x.png);
         }
     }
 }
