@@ -13,11 +13,12 @@
         display: flex;
         flex-wrap: wrap;
         padding: 60px 34px 60px 32px;
-        
+        width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
         padding: 60px 0 20px 16px;
+        width: 100%;
     }
 }
 
@@ -89,14 +90,15 @@
     max-width: 220px;
     
     @media screen and (min-width: 768px) {
-        width: 334px;
+        min-width: 334px;
         margin-right: 0;
         margin-left: 32px;
         margin-top: 40px;
+        
     }
 
     @media screen and (min-width: 1200px) {
-        width: 463px;
+        min-width: 463px;
         margin-left: 99px;
         margin-top: 90px;
     }
