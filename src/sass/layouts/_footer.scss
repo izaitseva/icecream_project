@@ -34,7 +34,7 @@
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
             padding-left: 16px;
-            padding-right: 20px;
+            padding-right: 16px;
         }
 
     @media screen and (min-width: 768px) {
@@ -49,7 +49,7 @@
 
 .first-title {
     color: var(--sec-color);
-    font-family: 'Titan One';
+    font-family: 'Titan One', cursive;
     font-weight: 400;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -75,7 +75,7 @@
 
 .sec-title {
     color: var(--main-color);
-    font-family: 'Titan One';
+    font-family: 'Titan One', cursive;
     font-weight: 400;
     
     text-transform: uppercase;
@@ -126,6 +126,8 @@
         // background-color: var(--white-text-color);
         color: var(--sec-color);
         border-radius: 50%;
+
+        transition: color var(--anim-slow), background-color var(--anim-slow);
 
         @media screen and (min-width: 768px) {
                 width: 34px;
