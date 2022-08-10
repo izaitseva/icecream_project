@@ -7,15 +7,12 @@
   display: flex;
 }
 
-.header_container {
+.heaer_container {
   display: flex;
   align-items: center;
   background-color: #FFB8CA;
  
 }
-
-
-
 
 .header-icon_svg {
   fill: #D41443;
@@ -82,4 +79,19 @@
       display: none;
   
     }
+}
+
+.menu-btn_text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.32;
+  color: #D41443;
+}
+.munu-btn_icon {
+  fill: currentColor;
+}
+
+.munu-btn_icon {
+  color: #D41443;
+  margin-left: 12px;
 }

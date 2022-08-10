@@ -32,29 +32,28 @@
     font-weight: 400;
 
     font-size: 26px;
-    line-height: 30px;
+    line-height: 1,16;
     letter-spacing: 0.04em;
    
 
     color:var(--white-text-color);
 
     @media screen and (min-width: 768px) {
-            padding-top: 20px;
+        padding-top: 20px;
         font-size: 22px;
-        line-height: 25px;
+        line-height: 1,14;
         letter-spacing: 0.04em;
     
         }
 
     @media screen and (min-width: 1200px) {
         padding-top: 60px;
-                  
+                
         font-size: 38px;
         line-height: 1.16;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        
-                 }
+        }
 }
 
 
@@ -74,7 +73,7 @@
     
         }
     
-        @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     
             font-size: 58px;
             line-height: 90.5%;
@@ -99,8 +98,6 @@
     width: 62px;
     height: 24px;
     border-radius: 22px;
-
-    
   
     color: var(--white-text-color);
     background-color: var(--main-color);
@@ -131,7 +128,7 @@
     @media screen and (min-width: 1200px) {
     
             width: 138px;
-                height: 40px;
+            height: 40px;
     
         }
     
@@ -154,7 +151,7 @@
     display: flex;
 }
 .uppertitle-block {
-    z-index: 1;
+   
 
     display: flex;
 
@@ -165,23 +162,24 @@
 }
 
 .hero-uppertitle {
-    margin-top: 68px;
-    margin-bottom: 20px;
+   margin-top: 41px;
+    margin-bottom: 7px;
     width: 114px;
     height: 48px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
     
-    
+    z-index: 1;
     color:var(--white-text-color);
 
     @media screen and (min-width: 1200px) {
+        margin-top: 68px;
+        margin-bottom: 20px;
         width: 200px;
-            height: 78px;
-         
-            font-size: 14px;
-                line-height: 1.43;
+        height: 78px;
+        font-size: 14px;
+        line-height: 1.43;
     
         }
 }
@@ -214,15 +212,11 @@
     text-transform: uppercase;
     color:var(--main-color);
 
-    
-    
         @media screen and (min-width: 1200px) {
 
             font-size: 46px;
             line-height: 1.16;
             letter-spacing: 0.04em;
-    
-          
     
         }
 
@@ -235,15 +229,6 @@
 }
 
 
-// .hero-benefits__item--first {
-//     @media screen and (max-width: 1199px) {
-//             margin-top: 20px;
-    
-//         }
-
-// }
-
-
 .hero-benefits__descr {
     font-family: 'DM Sans';
     font-style: normal;
@@ -253,6 +238,7 @@
     line-height: 1.25;
     letter-spacing: 0.04em;
     text-align: right;
+    padding-right: 5px;
     color:var(--white-text-color);
     
 
@@ -261,23 +247,18 @@
             font-size: 14px;
             line-height: 1.29;
            
-    
-    
-    
         }
-
-
-
    
 }
+
+
 
 
 
 .hero-images__second {
     position: absolute;
     bottom: 0;
-    right: 344px;
-
+    margin-left: 117px;
     z-index: 1;
 
     @media screen and (min-width: 768px) {
@@ -285,6 +266,11 @@
         right: 303px;
     
         }
+
+                @media screen and (min-width: 1200px) {
+        
+                    right: 344px;
+                }
 
 
 }
@@ -298,8 +284,16 @@
 
 .benefits {
     position: absolute;
-    right:32px;
-    top: 64px;
+    top: 16px;
+     right: 32px;
+     
+
+    @media screen and (min-width: 1200px) {
+                position: absolute;
+                 right: 32px;
+                 top: 64px;
+    
+        }
    
 }
 
@@ -322,9 +316,8 @@
     @media screen and (min-width: 768px) {
 
             left: 285px;
-
             width: 335px;
-                height: 333px;
+            height: 333px;
     
         }
 
@@ -332,8 +325,6 @@
         
                     left: 517px;
                     bottom: 76px;
-        
-        
                     width: 534px;
                     height: 534px;
         
@@ -341,26 +332,17 @@
 
 }
 
-// .hero-benefits__item::after {
-//     position: absolute;
-//     content: '';
-   
-//     right: 0;
-   
-    
-//     background-color: var(--white-text-color);
-//     border-radius: 50%;
-//     width: 30px;
-//     height: 30px;
-
-// }
+.hero-benefits {
+    position: relative;
+    z-index: 1;
+}
 
 .hero-benefits__item--first {
-    position: relative;
     margin-bottom: 17px;
     width: 43px;
     height: 44px;
     z-index: 1;
+   
    @media screen and (min-width: 1200px) {
     width: 72px;
     height: 77px;
@@ -370,13 +352,12 @@
         }
 }
 
-.hero-benefits__item--first::after {
+.hero-benefits__item--first::before {
     position: absolute;
         content: '';
     
-        right: -15px;
-        bottom: -40px;
-        
+        right: 2px;
+        bottom: 29px;
         
     
         background-color: var(--white-text-color);
@@ -387,25 +368,24 @@
         @media screen and (min-width: 1200px) {
                 width: 30px;
                 height: 30px;
+
+                  right: 2px;
+                  bottom: 50px;
         
             }
 }
 
 .hero-benefits__item--second {
+    
     text-align: center;
-   
+    z-index: 1;
+  
     width: 51px;
     height: 43px;
-
-   
-
-   
 
     @media screen and (min-width: 1200px) {
         width: 92px;
         height: 76px;
-       
-    
         }
 
         
@@ -415,29 +395,30 @@
 .hero-benefits__item--second::before {
     position: absolute;
     content: '';
-    
-
-    right: 10px;
+    right: 6px;
     top: -4px;
-    
-
     background-color: var(--white-text-color);
     border-radius: 50%;
+
+    
     
 
     width: 16px;
-        height: 16px;
+    height: 16px;
     
         @media screen and (min-width: 1200px) {
             width: 30px;
             height: 30px;
+
+            right: 10px;
+            top: -4px;
     
         }
 }
 
 .hero-benefits__amount {
     text-align: center;
+   
 
-    
-    
 }
+
