@@ -26,6 +26,9 @@
         }
 }
 
+.hero__mine {
+    z-index: 1;
+}
 .hero__title {
     padding-top: 136px;
     font-family: "Titan One";
@@ -34,7 +37,7 @@
     font-size: 26px;
     line-height: 1,16;
     letter-spacing: 0.04em;
-   
+    
 
     color:var(--white-text-color);
 
@@ -259,15 +262,17 @@
     position: absolute;
     bottom: 0;
     margin-left: 117px;
-    z-index: 1;
+    z-index: 2;
 
     @media screen and (min-width: 768px) {
+        z-index: 1;
       
         right: 303px;
     
         }
 
                 @media screen and (min-width: 1200px) {
+                    z-index: 1;
         
                     right: 344px;
                 }
@@ -280,6 +285,10 @@
     right: 32px;
     bottom: 0;
     z-index: 1;
+
+    @media screen and (max-width: 767px) {
+    display: none;
+        }
 }
 
 .benefits {
@@ -332,16 +341,18 @@
 
 }
 
+
 .hero-benefits {
     position: relative;
-    z-index: 1;
+  
 }
 
 .hero-benefits__item--first {
+   
     margin-bottom: 17px;
     width: 43px;
     height: 44px;
-    z-index: 1;
+   
    
    @media screen and (min-width: 1200px) {
     width: 72px;
@@ -378,7 +389,7 @@
 .hero-benefits__item--second {
     
     text-align: center;
-    z-index: 1;
+    
   
     width: 51px;
     height: 43px;
@@ -400,7 +411,7 @@
     background-color: var(--white-text-color);
     border-radius: 50%;
 
-    
+    z-index: 1;
     
 
     width: 16px;
@@ -418,7 +429,16 @@
 
 .hero-benefits__amount {
     text-align: center;
-   
 
 }
+
+// .circle-benef{
+//     width: 26px;
+//     height: 26px;
+//     border-radius: 50%;
+//     background-color: #FFFFFF;
+//     border: none;
+//     background-position: bottom 120px ;
+// }
+
 
