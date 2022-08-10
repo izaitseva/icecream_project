@@ -1,19 +1,15 @@
-.container {
-  width: 320px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  margin: 0 auto;
+.reviews__container {
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    padding-bottom: 80px;
 
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    padding-bottom: 120px;
+
   }
-
-
 }
 
 .reviews-slider {
@@ -21,7 +17,12 @@
 
 
   @media screen and (min-width: 768px) {
-    padding: 0 54px;
+    padding: 0 42px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 100px;
 
   }
 
@@ -64,7 +65,7 @@
   line-height: 2.58;
   background: repeating-linear-gradient(#FAFAFA, #FAFAFA 30px, #E1E1E1 29px 31px);
   padding: 0 12px 9px;
-  margin: 0;
+  margin: auto;
   position: relative;
 
   &:before {
