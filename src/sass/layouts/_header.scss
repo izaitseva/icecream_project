@@ -1,6 +1,7 @@
 .header {
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .header-list {
@@ -15,3 +16,4 @@
 .header-icon_svg {
   fill: #d41443;
 }
+
