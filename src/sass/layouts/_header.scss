@@ -10,74 +10,69 @@
 .heaer_container {
   display: flex;
   align-items: center;
-  background-color: #FFB8CA;
+  background-color: var(--bg-color);
  
 }
 
 .header-icon_svg {
-  fill: #D41443;
+  fill: var(--main-color);
 }
 
-.header-logo {
-  padding-top: 37px;
-  
-}
+
 
 .header-nav {
-  padding-top: 40px;
   margin-left: 128px;
-
   z-index: 1;
-
-  
 
   @media screen and (max-width: 1199px) {
       display: none;
   
     }
 }
+
 .header-item {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.32;
    display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: var(--white-text-color);
   margin-right: 32px;
+
+  transition: color var(--animation-transition);
   
 }
 
 .header-item:hover,
 .header-item:focus {
-  color: #D41443;
+  color: var(--main-color);
 
 }
 
 .header-link--current {
-  color: #D41443;
+  color: var(--main-color);
 
 }
+
 .header-item:last-child {
   margin-right: 0;
 }
 
 .menu-btn {
   margin-left: auto;
-  margin-top: 40px;
   text-decoration: none;
   border: none;
-  
+
+  transition: background-color var(--animation-transition);
 
   &:hover,
   &:focus {
     background-color:var(--button-hover-bgc);
   }
   
- 
 
   @media screen and (max-width: 767px) {
       display: none;
-  
     }
 }
 
@@ -85,13 +80,14 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.32;
-  color: #D41443;
+  color: var(--main-color);
 }
+
 .munu-btn_icon {
   fill: currentColor;
 }
 
 .munu-btn_icon {
-  color: #D41443;
+  color: var(--main-color);
   margin-left: 12px;
 }
