@@ -224,11 +224,21 @@
   display: grid;
   justify-content: center;
 
+
+
   @media screen and (min-width: 768px) {
     display: flex;
 
   }
 
+}
+
+.button {
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  cursor: pointer;
+  border: none;
 }
 
 .contacts__button--red {
@@ -237,6 +247,8 @@
   font-size: 16px;
   height: 44px;
   margin: 0 0 10px 0;
+  color: var(--white-text-color);
+  background-color: var(--main-color);
 
   @media screen and (min-width: 768px) {
     margin: 0 14px 0;
@@ -255,6 +267,8 @@
   padding: 0 48px 0 32px;
   font-size: 16px;
   height: 44px;
+  color: var(--main-color);
+  background-color: var(--white-text-color);
 
   @media screen and (min-width: 768px) {
     padding: 0 56px 0 38px;
@@ -264,9 +278,14 @@
     padding: 0 54px 0 36px;
   }
 
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-bgc);
+  }
+
 }
 
 .contacts__button__icon {
   margin-left: 10px;
-
+  fill: currentColor;
 }
