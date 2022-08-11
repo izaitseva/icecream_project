@@ -1,16 +1,19 @@
 :root {
-    --main-color: #D41443;
-    --sec-color: #FFA5BA;
-    --button-hover-bgc: #ECEBEB;
-    --button-red-bgc: #D41342;
-    --white-text-color: #FFFFFF;
-    --sec-text-color: #907E82;
-    --black-text-color: #000000;
-    --first-bgc: #E5E5E5;
-    --sec-bgc: #FFF5F6;
-    --customer-reviews-bgc: #E1E1E1;
-    --first-additional-color: #F0D1A5;
-    --second-additional-color: #C2E297;
+  --main-color: #d41443;
+  --sec-color: #ffa5ba;
+  --bg-circle: #FFB8CA;
+  --button-hover-bgc: #ecebeb;
+  --button-red-bgc: #d41342;
+  --white-text-color: #ffffff;
+  --sec-text-color: #907e82;
+  --black-text-color: #000000;
+  --first-bgc: #e5e5e5;
+  --sec-bgc: #fff5f6;
+  --customer-reviews-bgc: #e1e1e1;
+  --first-additional-color: #f0d1a5;
+  --second-additional-color: #c2e297;
+  --third-additional-color: #C2E297;
+  --modal-color: #e17992;
 
-
+  --anim-slow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
