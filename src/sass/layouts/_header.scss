@@ -1,17 +1,18 @@
 .header {
   display: flex;
   align-items: center;
+
 }
 
 .header-list {
   display: flex;
 }
 
-.heaer_container {
+.header_container {
   display: flex;
   align-items: center;
 }
 
 .header-icon_svg {
-  fill: #D41443;
+  fill: var(--main-color);
 }
