@@ -17,7 +17,7 @@
 .hero__container {
     position: relative;
     background-color: #FFB8CA;
-    height: 502px;
+    height: 480px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px){
     
@@ -332,15 +332,14 @@
 
     @media screen and (min-width: 768px) {
             bottom-top: 189px;
+            width: 190px;
     
         }
 
     @media screen and (max-width: 767px) {
     display: none;
         }
-    @media screen and (min-width: 768px) {
-    width: 190px;
-        }
+   
 
         @media screen and (min-width: 1200px) {
     width: 304px;
@@ -374,15 +373,17 @@
     width: 346px;
     height: 344px;
 
-    background-color: #FFA5BA;
+   
     border-radius: 50%;
 
     @media screen and (max-width: 767px) {
+       
     
             top: 25px;
     
         }
     @media screen and (min-width: 768px) {
+        background-color: #FFA5BA;
         top: -35px;
         
             left: 240px;
@@ -391,6 +392,7 @@
     
         }
                 @media screen and (min-width: 1200px) {
+                    background-color: #FFA5BA;
         
                     left: 517px;
                     bottom: 76px;
@@ -488,3 +490,21 @@
 
 }
 
+.mobail-circle {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+    
+        background-color: #FFA5BA;
+        margin-left: 14px;
+       margin-top: 25px;
+        
+        width: 346px;
+        height: 344px;
+        
+        border-radius: 50%;
+    
+        }
+    
+
+}
