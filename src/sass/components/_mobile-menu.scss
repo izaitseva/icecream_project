@@ -32,6 +32,29 @@
   }
 }
 
+.modal-btn {
+  margin-left: 0;
+  margin-right: 0;
+  text-decoration: none;
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  cursor: pointer;
+  border: none;
+
+  transition: background-color var(--anim-slow);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-bgc);
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .mobile-menu_nav {
   margin-top: 19px;
 
