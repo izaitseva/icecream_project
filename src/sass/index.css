@@ -196,20 +196,33 @@ img {
 .hero__container {
   position: relative;
   background-color: #FFB8CA;
-  height: 580px;
+  height: 502px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__container {
-    height: 416px;
+    height: 369px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    height: 590px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__mine {
+    position: absolute;
+    z-index: 3;
   }
 }
 
 .hero__title {
+  text-transform: uppercase;
   padding-top: 136px;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 26px;
-  line-height: 30px;
+  line-height: 1, 16;
   letter-spacing: 0.04em;
   color: var(--white-text-color);
 }
@@ -217,7 +230,7 @@ img {
   .hero__title {
     padding-top: 20px;
     font-size: 22px;
-    line-height: 25px;
+    line-height: 1, 14;
     letter-spacing: 0.04em;
   }
 }
@@ -316,7 +329,6 @@ img {
 }
 
 .uppertitle-block {
-  z-index: 1;
   display: flex;
 }
 @media screen and (max-width: 767px) {
@@ -326,6 +338,7 @@ img {
 }
 
 .hero-uppertitle {
+  position: relative;
   margin-top: 41px;
   margin-bottom: 7px;
   width: 114px;
@@ -333,6 +346,7 @@ img {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
+  z-index: 1;
   color: var(--white-text-color);
 }
 @media screen and (min-width: 1200px) {
@@ -397,19 +411,41 @@ img {
   }
 }
 
+.hero-benefits__descr--first {
+  padding-right: 10px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: var(--white-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-benefits__descr--first {
+    font-size: 14px;
+    line-height: 1.29;
+    padding-right: 20px;
+  }
+}
+
 .hero-images__second {
   position: absolute;
   bottom: 0;
   margin-left: 117px;
-  z-index: 1;
+  z-index: 2;
+  top: 34px;
 }
 @media screen and (min-width: 768px) {
   .hero-images__second {
+    z-index: 1;
     right: 303px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-images__second {
+    z-index: 1;
     right: 344px;
   }
 }
@@ -419,6 +455,16 @@ img {
   right: 32px;
   bottom: 0;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .hero-images__third {
+    bottom-top: 189px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-images__third {
+    display: none;
+  }
 }
 
 .benefits {
@@ -444,11 +490,17 @@ img {
   background-color: #FFA5BA;
   border-radius: 50%;
 }
+@media screen and (max-width: 767px) {
+  .hero-images__group::after {
+    top: 25px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-images__group::after {
-    left: 285px;
-    width: 335px;
-    height: 333px;
+    top: -35px;
+    left: 240px;
+    width: 355px;
+    height: 353px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -463,13 +515,11 @@ img {
 .hero-benefits__item--first {
   position: relative;
   margin-bottom: 17px;
-  width: 43px;
   height: 44px;
   z-index: 1;
 }
 @media screen and (min-width: 1200px) {
   .hero-benefits__item--first {
-    width: 72px;
     height: 77px;
   }
 }
@@ -477,8 +527,9 @@ img {
 .hero-benefits__item--first::after {
   position: absolute;
   content: "";
-  right: -10px;
-  bottom: -32px;
+  right: 2px;
+  bottom: 30px;
+  z-index: -1;
   background-color: var(--white-text-color);
   border-radius: 50%;
   width: 16px;
@@ -488,12 +539,13 @@ img {
   .hero-benefits__item--first::after {
     width: 30px;
     height: 30px;
-    right: -15px;
-    bottom: -40px;
+    right: 5px;
+    bottom: 55px;
   }
 }
 
 .hero-benefits__item--second {
+  position: relative;
   text-align: center;
   z-index: 1;
   width: 51px;
@@ -509,10 +561,11 @@ img {
 .hero-benefits__item--second::after {
   position: absolute;
   content: "";
-  right: 6px;
-  top: -4px;
+  right: 2px;
+  top: -2px;
   background-color: var(--white-text-color);
   border-radius: 50%;
+  z-index: -1;
   width: 16px;
   height: 16px;
 }
@@ -520,7 +573,7 @@ img {
   .hero-benefits__item--second::after {
     width: 30px;
     height: 30px;
-    right: 10px;
+    right: 2px;
     top: -4px;
   }
 }
