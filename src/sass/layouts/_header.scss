@@ -1,6 +1,7 @@
 .header {
   display: flex;
   align-items: center;
+  background-color: var(--bg-circle);
 
 }
 
@@ -11,7 +12,7 @@
 .header_container {
   display: flex;
   align-items: center;
-  background-color: var(--bg-circle);
+
   padding-top: 8px;
 
   @media screen and (min-width: 768px) {
@@ -37,22 +38,22 @@
   z-index: 1;
 
   @media screen and (max-width: 1199px) {
-      display: none;
-  
-    }
+    display: none;
+
+  }
 }
 
 .header-item {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.32;
-   display: flex;
+  display: flex;
   align-items: center;
   color: var(--white-text-color);
   margin-right: 32px;
 
   transition: color var(---anim-slow);
-  
+
 }
 
 .header-item:hover,
@@ -63,7 +64,6 @@
 
 .header-link--current {
   color: var(--main-color);
-
 }
 
 .header-item:last-child {
@@ -81,13 +81,13 @@
 
   &:hover,
   &:focus {
-    background-color:var(--button-hover-bgc);
+    background-color: var(--button-hover-bgc);
   }
-  
+
 
   @media screen and (max-width: 767px) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .menu-btn_text {
