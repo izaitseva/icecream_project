@@ -197,6 +197,7 @@ img {
   position: relative;
   background-color: #FFB8CA;
   height: 502px;
+  height: 440px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__container {
@@ -206,6 +207,16 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__container {
     height: 590px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    height: 416px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    height: 580px;
   }
 }
 
@@ -219,7 +230,7 @@ img {
 .hero__title {
   text-transform: uppercase;
   padding-top: 136px;
-  font-family: "Titan One";
+  font-family: "Titan One", cursive;
   font-weight: 400;
   font-size: 26px;
   line-height: 1, 16;
@@ -433,19 +444,22 @@ img {
 .hero-images__second {
   position: absolute;
   bottom: 0;
-  margin-left: 117px;
+  right: 32px;
   z-index: 2;
   top: 34px;
+  width: 171px;
 }
 @media screen and (min-width: 768px) {
   .hero-images__second {
     z-index: 1;
+    width: 143px;
     right: 303px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-images__second {
     z-index: 1;
+    width: 236px;
     right: 344px;
   }
 }
@@ -464,6 +478,16 @@ img {
 @media screen and (max-width: 767px) {
   .hero-images__third {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-images__third {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-images__third {
+    width: 304px;
   }
 }
 

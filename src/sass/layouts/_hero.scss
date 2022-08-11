@@ -17,7 +17,6 @@
 .hero__container {
     position: relative;
     background-color: #FFB8CA;
-    
     height: 502px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px){
@@ -29,6 +28,8 @@
                 @media screen and (min-width: 1200px) {
                     height: 590px;
                 }
+
+
 }
 
 .hero__mine {
@@ -44,7 +45,7 @@
 .hero__title {
    text-transform: uppercase;
     padding-top: 136px;
-    font-family: "Titan One";
+    font-family: "Titan One", cursive;
     font-weight: 400;
 
     font-size: 26px;
@@ -299,20 +300,24 @@
 .hero-images__second {
     position: absolute;
     bottom: 0;
-    margin-left: 117px;
+    // margin-left: 117px;
+    right: 32px;
     z-index: 2;
+
     top: 34px;
+
+    width: 171px;
+
 
     @media screen and (min-width: 768px) {
         z-index: 1;
-      
+        width: 143px;
         right: 303px;
-    
         }
 
                 @media screen and (min-width: 1200px) {
                     z-index: 1;
-        
+                    width: 236px;
                     right: 344px;
                 }
 
@@ -332,6 +337,13 @@
 
     @media screen and (max-width: 767px) {
     display: none;
+        }
+    @media screen and (min-width: 768px) {
+    width: 190px;
+        }
+
+        @media screen and (min-width: 1200px) {
+    width: 304px;
         }
 }
 
