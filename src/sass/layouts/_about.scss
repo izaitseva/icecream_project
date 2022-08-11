@@ -7,6 +7,7 @@
     padding: 60px 20px 40px 20px;
     position: relative;
     display: block;
+    justify-content: center;
     
 
     @media screen and (min-width: 768px) {
@@ -87,12 +88,14 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 220px;
-    margin-left: auto;
-    margin-right: auto;
     
-    // @media screen and (min-width: 321px) and (max-width:767px) {
-    //     max-width: 100%;
-    // }
+    
+    @media screen and (min-width: 321px) and (max-width:767px) {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
 
     @media screen and (min-width: 768px) {
         min-width: 334px;
@@ -169,7 +172,7 @@
     margin-right: auto;
     display: flex;
     position: absolute;
-    top: 66%;
+    top: 62%;
     left: 20px;
     right: 20px;
     background-image: url(../images/sectionbg1/sectionbg1-1x280.png);
