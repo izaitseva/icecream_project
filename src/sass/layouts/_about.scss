@@ -87,6 +87,8 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
     
     // @media screen and (min-width: 321px) and (max-width:767px) {
     //     max-width: 100%;
@@ -122,6 +124,8 @@
 
 .about__image {
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
     
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
@@ -161,7 +165,8 @@
 .about-background {
     
     min-height: 133px;
-    
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     position: absolute;
     top: 66%;
