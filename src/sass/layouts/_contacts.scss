@@ -269,6 +269,7 @@
   height: 44px;
   color: var(--main-color);
   background-color: var(--white-text-color);
+  transition: background-color var(--anim-slow);
 
   @media screen and (min-width: 768px) {
     padding: 0 56px 0 38px;

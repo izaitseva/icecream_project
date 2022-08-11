@@ -228,6 +228,8 @@
     color: #D41443;
     z-index: 5;
 
+    transition: background-color var(--anim-slow);
+
     &:hover {
         background-color: var(--button-hover-bgc);
     }

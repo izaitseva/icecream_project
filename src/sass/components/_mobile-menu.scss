@@ -82,6 +82,8 @@
   }
 }
 
+.mobile-menu_nav {}
+
 .mobile-menu_link {
   color: white;
   display: flex;
@@ -126,7 +128,7 @@
 
   .mobile-menu-btn.is-open & {
     opacity: 1;
-    fill: white;
+    fill: var(--white-text-color);
   }
 }
 
