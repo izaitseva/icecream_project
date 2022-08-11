@@ -1,13 +1,14 @@
 .header {
   display: flex;
   align-items: center;
+
 }
 
 .header-list {
   display: flex;
 }
 
-.heaer_container {
+.header_container {
   display: flex;
   align-items: center;
   background-color: var(--bg-color);
@@ -16,6 +17,7 @@
 
 .header-icon_svg {
   fill: var(--main-color);
+
 }
 
 
@@ -90,4 +92,5 @@
 .munu-btn_icon {
   color: var(--main-color);
   margin-left: 12px;
+
 }
