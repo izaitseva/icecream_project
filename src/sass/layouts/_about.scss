@@ -13,12 +13,12 @@
         display: flex;
         flex-wrap: wrap;
         padding: 60px 34px 60px 32px;
-        width: 100%;
+        
     }
 
     @media screen and (min-width: 1200px) {
         padding: 60px 0 20px 16px;
-        width: 100%;
+        
     }
 }
 
@@ -86,9 +86,12 @@
 .about__conteiner-text {
     display: flex;
     flex-wrap: wrap;
-    margin-right: auto;
     max-width: 220px;
     
+    // @media screen and (min-width: 321px) and (max-width:767px) {
+    //     max-width: 100%;
+    // }
+
     @media screen and (min-width: 768px) {
         min-width: 334px;
         margin-right: 0;
