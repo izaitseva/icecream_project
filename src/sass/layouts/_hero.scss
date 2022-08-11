@@ -19,7 +19,7 @@
     height: 440px;
     overflow: visible;
 
-    background-color: var(--bg-color);
+    background-color: #FFB8CA;
 
     @media screen and (max-width: 767px) {
             overflow: hidden;
@@ -120,7 +120,7 @@
     background-color: var(--main-color);
     cursor: pointer;
 
-    transition: color var(--animation-transition), background-color var(--animation-transition);
+    transition: color var(--anim-slow), background-color var(--anim-slow);
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
@@ -146,7 +146,7 @@
     width: 82px;
     height: 24px;
 
-    transition: color var(--animation-transition), background-color var(--animation-transition);
+    transition: color var(--anim-slow), background-color var(--anim-slow);
 
     @media screen and (min-width: 1200px) {
         width: 138px;
@@ -206,15 +206,6 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
-
-.hero-btn__arrow {
-    fill: currentColor;
-}
-
-.hero-btn__arrow:hover,
-.hero-btn__arrow:focus{
-    color: var(--main-color);
 }
 
 .benefits {
