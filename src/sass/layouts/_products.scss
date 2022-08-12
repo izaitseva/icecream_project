@@ -48,16 +48,19 @@
     justify-content: center;
 
     @media screen and (min-width: 480px) {
-        max-width: 368px;
+        min-width: 450px;
     }
 
 
     @media screen and (min-width: 768px) {
+        min-width: 224px;
         max-width: 224px;
+        flex-wrap: nowrap;
     }
 
     @media screen and (min-width: 1200px) {
         gap: 32px;
+        min-width: 368px;
         max-width: 368px;
     }
 
