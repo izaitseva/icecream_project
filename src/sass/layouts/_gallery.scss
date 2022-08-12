@@ -1,13 +1,14 @@
-.gallery__conteiner {
-  background: linear-gradient(to bottom, var(--sec-bgc) 17%, #ffffff 17%);
+.gallery {
   padding-bottom: 60px;
 
-}
-
-@media screen and (min-width: 1200px) {
-  .gallery__conteiner {
+  @media screen and (min-width: 1200px) {
     padding-bottom: 120px;
   }
+}
+
+.gallery__conteiner {
+  background: linear-gradient(to bottom, var(--sec-bgc) 17%, #ffffff 17%);
+
 }
 
 img {
