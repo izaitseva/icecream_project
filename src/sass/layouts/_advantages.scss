@@ -14,9 +14,16 @@
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: nowrap;
     gap: 32px;
   }
 
@@ -50,6 +57,10 @@
 .advantages__item {
   max-width: 230px;
   padding-top: 66px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 300px;
+  }  
 
   @media screen and (min-width: 768px) {
     max-width: 162px;
