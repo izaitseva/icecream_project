@@ -261,6 +261,12 @@
     padding: 0 54px 0 35px;
 
   }
+
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+    background-color: var(--button-hover-bgc);
+  }
 }
 
 .contacts__button--white {
