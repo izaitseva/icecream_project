@@ -22,7 +22,7 @@
     height: 440px;
     overflow: visible;
 
-    // background-color: #FFB8CA;
+    
 
     @media screen and (max-width: 767px) {
         overflow: hidden;
@@ -105,9 +105,9 @@
     margin-bottom: 40px;
 }
 
-.hero__item {
+.hero__link {
 
-    margin-top: 24px;
+    margin-top: 20px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -126,6 +126,7 @@
     transition: color var(--anim-slow), background-color var(--anim-slow);
 
     @media screen and (min-width: 1200px) {
+        margin-top: 24px;
         font-size: 14px;
         line-height: 1.29;
         width: 107px;
@@ -134,13 +135,13 @@
     }
 }
 
-// .hero__item:hover,
-// .hero__item:focus {
-//     color: var(--main-color);
-//     background-color: var(--white-text-color);
-// }
+.hero__link:hover,
+.hero__link:focus {
+    color: var(--main-color);
+    background-color: var(--white-text-color);
+}
 
-.hero__item--secondary {
+.hero__link--secondary {
     color: var(--main-color);
     background-color: var(--white-text-color);
     width: 82px;
@@ -156,13 +157,13 @@
 
 }
 
-.hero__item--secondary:hover,
-.hero__item--secondary:focus {
+.hero__link--secondary:hover,
+.hero__link--secondary:focus {
     color: var(--main-color);
     background-color: var(--button-hover-bgc);
 }
 
-.hero__item:not(:last-child) {
+.hero__link:not(:last-child) {
     margin-right: 12px;
 }
 
