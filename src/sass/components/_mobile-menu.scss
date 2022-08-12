@@ -1,10 +1,9 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   transform: translateX(100%);
 
-  width: 100%;
   height: 100%;
 
   background-color: var(--modal-color);
@@ -17,10 +16,12 @@
   z-index: 10;
   transition: var(--anim-slow);
 
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 58px;
     padding-bottom: 690px;
-
   }
 
   @media screen and (min-width: 1200px) {
@@ -31,7 +32,9 @@
     transform: translateX(0);
   }
 }
-
+.modal-btn__box {
+  display: flex;
+}
 .modal-btn {
   margin-left: 0;
   margin-right: 0;
@@ -48,7 +51,6 @@
   &:focus {
     background-color: var(--button-hover-bgc);
   }
-
 
   @media screen and (min-width: 1200px) {
     display: none;
@@ -84,7 +86,6 @@
   }
 }
 
-
 .mobile-menu_link {
   color: var(--white-text-color);
   display: flex;
@@ -109,13 +110,21 @@
 
   margin-left: auto;
 
-
   @media screen and (min-width: 768px) {
     margin-left: 293px;
   }
 
   @media screen and (min-width: 1200px) {
     display: none;
+  }
+}
+.mobile-menu-btn.is-open {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+
+  @media screen and (min-width: 768px) {
+    right: 30px;
   }
 }
 
