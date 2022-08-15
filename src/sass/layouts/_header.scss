@@ -5,16 +5,13 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
-
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 37px;
-
   }
 
   background-color: var(--bg-circle);
-
 }
 
 .header-list {
@@ -24,19 +21,11 @@
 .header_container {
   display: flex;
   align-items: center;
-
-
-
-
 }
 
 .header-icon_svg {
-
   fill: var(--main-color);
-
 }
-
-
 
 .header-nav {
   margin-left: 128px;
@@ -44,7 +33,6 @@
 
   @media screen and (max-width: 1199px) {
     display: none;
-
   }
 }
 
@@ -58,13 +46,11 @@
   margin-right: 32px;
 
   transition: color var(--anim-slow);
-
 }
 
 .header-item:hover,
 .header-item:focus {
   color: var(--main-color);
-
 }
 
 .current {
@@ -89,7 +75,6 @@
     background-color: var(--button-hover-bgc);
   }
 
-
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -109,5 +94,4 @@
 .munu-btn_icon {
   color: var(--main-color);
   margin-left: 12px;
-
 }
