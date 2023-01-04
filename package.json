@@ -2,7 +2,7 @@
   "name": "icecream-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://izaitseva.github.io/icecream_project",
+  "homepage": "https://izaitseva.github.io/icecream_project/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /icecream_project/"
